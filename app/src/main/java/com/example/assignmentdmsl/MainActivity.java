@@ -22,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
     String[] TitleDescription = {"Description Pandula","Description Dananjaya","Description Mandawala","Description Amarabandu","Description Rupasinghe"};
     int[] ImageList = {R.drawable.picture1,R.drawable.picture2,R.drawable.picture3,R.drawable.picture4,R.drawable.picture5};
 
-
+    //Dummy Data Set for Service Lists and Images
+    //String[] ServiceList = {"Service List","Service List","Service List","Service List","Service List","Service List","Service List","Service List","Service List","Service List","Service List","Service List","Service List","Service List","Service List","Service List"};
+    //int [] ServiceIconList = {R.drawable.rounds,R.drawable.rounds,R.drawable.rounds,R.drawable.rounds,R.drawable.rounds,R.drawable.rounds,R.drawable.rounds,R.drawable.rounds,R.drawable.rounds,R.drawable.rounds,R.drawable.rounds,R.drawable.rounds,R.drawable.rounds,R.drawable.rounds,R.drawable.rounds,R.drawable.rounds};
     //Bottom sheet
     private BottomAppBar mbottomAppBar;
     private ConstraintLayout mbottomSheet;
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         //Recycle View Config
         recyclerView = findViewById(R.id.rvProgram);
         recyclerView.setHasFixedSize(true);
@@ -39,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutmanager);
         ProgramAdapter programAdapter = new ProgramAdapter(this, TitleList,TitleDescription,ImageList);
         recyclerView.setAdapter(programAdapter);
+
+
 
         //Bottom Sheet Configs
         mbottomSheet = findViewById(R.id.bottom_sheet);
