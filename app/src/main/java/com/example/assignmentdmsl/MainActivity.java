@@ -5,8 +5,10 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
@@ -30,10 +32,23 @@ public class MainActivity extends AppCompatActivity {
     private ConstraintLayout mbottomSheet;
     private BottomSheetBehavior mbottomSheetBehavior;
 
+    //Moving Second Page
+    private ImageView move;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Moving Second Page
+        move = findViewById(R.id.imageView1);
+        move.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Second.class);
+                startActivity(intent);
+            }
+        });
 
         //Recycle View Config
         recyclerView = findViewById(R.id.rvProgram);

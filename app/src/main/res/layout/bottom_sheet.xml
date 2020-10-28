@@ -101,7 +101,7 @@
                             android:layout_marginLeft="18dp"
                             android:layout_marginTop="100dp"
                             android:text="Service Title" />
-                
+
                 <ImageView
                     android:id="@+id/imageView5"
                     android:layout_width="88dp"
