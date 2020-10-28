@@ -5,9 +5,9 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     app:cardCornerRadius="10dp"
-    android:layout_marginTop="34px"
-    android:layout_marginLeft="24px"
-    android:layout_marginRight="24px"
+    android:layout_marginTop="34dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent">
 

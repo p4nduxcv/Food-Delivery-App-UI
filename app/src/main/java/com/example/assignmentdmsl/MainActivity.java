@@ -27,10 +27,5 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutmanager);
         ProgramAdapter programAdapter = new ProgramAdapter(this, TitleList,TitleDescription,ImageList);
         recyclerView.setAdapter(programAdapter);
-        try
-        {
-            this.getSupportActionBar().hide();
-        }
-        catch (NullPointerException e){}
     }
 }
