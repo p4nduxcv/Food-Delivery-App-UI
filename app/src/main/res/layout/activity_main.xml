@@ -20,18 +20,18 @@
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottomAppBar"
             android:layout_width="match_parent"
-            android:layout_margin="24dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:background="@drawable/bg_rounded_corners"
+            app:navigationIcon="@drawable/ic_baseline_menu_24"
             />
 
-        <view
-            android:layout_width="24dp"
-            android:layout_height="4dp"
-            android:layout_gravity="center"
-            app:layout_anchor="@+id/bottomAppBar"
-            app:layout_anchorGravity="center" />
+<!--        <view-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="4dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            app:layout_anchor="@+id/bottomAppBar"-->
+<!--            app:layout_anchorGravity="center" />-->
 
 
 
