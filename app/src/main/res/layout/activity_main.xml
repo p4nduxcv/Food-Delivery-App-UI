@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#E5E5E5">
+    android:background="#E5E5E5"
+    android:onClick="screenTapped">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvProgram"
@@ -26,12 +27,7 @@
             app:navigationIcon="@drawable/ic_baseline_menu_24"
             />
 
-<!--        <view-->
-<!--            android:layout_width="24dp"-->
-<!--            android:layout_height="4dp"-->
-<!--            android:layout_gravity="center"-->
-<!--            app:layout_anchor="@+id/bottomAppBar"-->
-<!--            app:layout_anchorGravity="center" />-->
+
 
 
 
